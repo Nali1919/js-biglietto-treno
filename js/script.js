@@ -1,4 +1,4 @@
-console.log('JS OK!');
+
 
 const km = prompt('Quanti km vuoi percorrere?');
 const kmAsNumber = parseInt(km);
@@ -7,12 +7,34 @@ console.log('km percorsi', kmAsNumber);
 
 const età = prompt('Quanti anni hai');
 const etàAsNumber = parseInt(età);
-console.log('età', etàAsNumber);
+console.log('età', etàAsNumber)
 
-const prezzo = 0.21 * kmAsNumber
-const risposta = `Il prezzo è ${prezzo}`;
+let costo = 0.21 * kmAsNumber
 
-document.getElementById('mio_id').innerHTML= risposta;
+console.log(costo)
+
+if (etàAsNumber <= 18) {
+
+    costo = costo - costo * 20 / 100
+    console.log(costo)
+    document.getElementById('js').innerHTML= costo
+
+}
+else if (etàAsNumber >= 65) {
+
+    costo = costo - costo * 40 / 100
+    console.log(costo)
+    document.getElementById('js').innerHTML= costo
+    
+}
+
+
+
+
+
+
+
+ 
 
 
 
