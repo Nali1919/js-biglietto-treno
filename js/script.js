@@ -12,6 +12,7 @@ console.log('età', etàAsNumber)
 let costo = 0.21 * kmAsNumber
 
 console.log(costo)
+ document.getElementById('js').innerHTML= costo
 
 if (etàAsNumber <= 18) {
 
